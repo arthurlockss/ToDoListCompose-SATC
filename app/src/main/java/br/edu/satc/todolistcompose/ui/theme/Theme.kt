@@ -71,13 +71,17 @@ val DarkColors = darkColorScheme(
 @Composable
 fun ToDoListComposeTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
 
+    val colorScheme = when {
+        darkTheme -> DarkColors
+        else -> LightColors
+    }
+
     MaterialTheme(
-        colorScheme = LightColors,
+        colorScheme = colorScheme,
         typography = Typography,
         content = content
     )
