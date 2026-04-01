@@ -1,59 +1,33 @@
-# To Do List Compose - Exercício de Persistência com Room Database
+# 📝 To-Do List Compose - Android Jetpack Compose
 
-Este projeto é a base para um exercício prático da disciplina de Desenvolvimento Mobile. O objetivo principal é implementar a camada de persistência de dados em um aplicativo de lista de tarefas (To Do List) utilizando **Room Database** e **SharedPreferences** no Android, com interface construída em **Jetpack Compose**.
+Este projeto é um aplicativo Android nativo desenvolvido para a disciplina de Soluções Mobile no Centro Universitário SATC (UNISATC).
 
-## Objetivo do Exercício
+## 🎯 Objetivo
 
-Compreender e aplicar conceitos de persistência de dados no desenvolvimento de aplicativos Android nativos, utilizando:
-- **SQLite com Room Database** para armazenamento local.
-- **SharedPreferences** para persistência de configurações simples.
+O objetivo principal é desenvolver um aplicativo utilizando Jetpack Compose para gerenciar uma lista de tarefas (To-Do List), aplicando conceitos de persistência de dados local, arquitetura MVVM e gerenciamento de estados.
 
-## Funcionalidades do App
+## 📑 Tema: Persistência e Personalização
 
-O aplicativo possui uma interface pronta, que permite:
-- Visualizar uma lista de tarefas.
-- Criar novas tarefas.
-- Marcar tarefas como concluídas.
+Nesta versão, o usuário pode gerenciar suas atividades diárias com foco em organização e produtividade. O diferencial está na persistência total, garantindo que as informações e preferências não se percam ao fechar o "Manto Sagrado" (o aplicativo).
 
-O objetivo do exercício é implementar a camada de persistência para que:
-1. As tarefas criadas sejam salvas no banco de dados.
-2. Ao abrir o aplicativo, a lista de tarefas seja carregada a partir do banco de dados.
+## 🚀 Funcionalidades e Requisitos
 
-## Instruções para o Exercício
+* **Persistência com Room:** Implementação de banco de dados SQLite local para salvar, ler e atualizar tarefas.
+* **Gerenciamento de Tema (Extra):** Utilização de **SharedPreferences** para salvar a preferência de Tema Claro/Escuro do usuário de forma permanente.
+* **Arquitetura Reativa:** Uso de **ViewModel** e **StateFlow** para garantir que a interface reflita as mudanças do banco de dados em tempo real.
+* **CRUD de Tarefas:** Capacidade de inserir novas tarefas e marcar tarefas concluídas com atualização imediata no banco de dados.
+* **UI Moderna:** Interface construída 100% em **Jetpack Compose**, focando em componentes reutilizáveis e Material Design 3.
 
-1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/thyerrimezzari/BaseToDoListCompose.git
-   ```
+## 🛠️ Tecnologias
 
-2. **Analise a camada visual**:
-   - Compreenda o funcionamento da interface construída com **Jetpack Compose**.
-   - Identifique os pontos onde será necessário integrar a persistência de dados.
+* **Linguagem:** Kotlin
+* **UI:** Jetpack Compose
+* **Banco de Dados:** Room Persistence Library
+* **Persistência de Preferências:** SharedPreferences
+* **Ambiente:** Android Studio
 
-3. **Implemente o Room Database**:
-   - Crie as entidades, DAOs e o banco de dados para armazenar as tarefas.
-   - Garanta que as tarefas criadas sejam salvas no banco de dados.
+---
 
-4. **Integre a persistência com a interface**:
-   - Ao criar uma nova tarefa, insira-a no banco de dados e atualize a lista exibida.
-   - Ao abrir o aplicativo, carregue a lista de tarefas a partir do banco de dados.
-
-5. **Utilize SharedPreferences**:
-   - Adicione persistência para configurações simples, se necessário.
-
-6. **Teste o aplicativo**:
-   - Certifique-se de que as tarefas são salvas e carregadas corretamente.
-   - Verifique se a interface reflete as alterações no banco de dados.
-
-## Recursos Adicionais
-
-- **Slides da aula**: Consulte os materiais fornecidos na disciplina.
-- **Exemplos de código**: Utilize os aplicativos de exemplo como referência.
-- **Documentação oficial**:
-  - [Room Database](https://developer.android.com/training/data-storage/room)
-  - [Jetpack Compose](https://developer.android.com/jetpack/compose)
-
-## Conclusão
-
-Este exercício é uma oportunidade prática para consolidar os conceitos de persistência de dados no desenvolvimento Android. Ao final, o aplicativo estará funcional, com uma camada de persistência integrada à interface.
-
+**Acadêmico:** Arthur  
+**Professor:** Thyerri Mezzari  
+**Curso:** Engenharia de Software - 5ª Fase
